@@ -278,6 +278,9 @@ nav {
   color: var(--text-light);
   border: 2px dashed var(--border-color);
 }
+.badge-explanation ul {
+  list-style: none;
+}
 
 .badge-tooltip {
   display: none;
@@ -543,16 +546,170 @@ footer {
   margin-top: 6rem;
 }
 
+/* Get Extension Section */
+#get-extension {
+  text-align: center;
+  background: linear-gradient(to bottom, var(--background-color), white);
+  border-bottom: 1px solid var(--border-color);
+  margin-top: 2rem;
+  padding: 6rem 2rem;
+}
+
+.cta-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.cta-container p {
+  font-size: 1.25rem;
+  color: var(--text-light);
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.primary-button {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+  background: var(--primary-dark);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.secondary-button {
+  padding: 1rem 2.5rem;
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+  background: transparent;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+}
+
+.secondary-button:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Policies Section */
+.policies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.policy-card {
+  padding: 2.5rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: var(--card-shadow);
+  transition: all var(--transition-speed);
+  border: 1px solid var(--border-color);
+}
+
+.policy-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.policy-card h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.policy-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.policy-card li {
+  margin-bottom: 0.75rem;
+  color: var(--text-light);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.policy-card li:before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+}
+
+.policy-card p {
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
 /* Section Spacing */
-#toxic-ingredients,
+#toxic-ingredients {
+  margin-top: 0;
+  padding-top: 6rem;
+  background: white;
+}
+
 #badge-demo,
 #about,
-#policies,
 #contact {
-  margin-top: 6rem;
+  margin-top: 0;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  border-top: 1px solid var(--border-color);
+  background: white;
+}
+
+#about {
+  background: var(--background-color);
+}
+
+/* Value Props */
+.value-props {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.value-prop {
+  text-align: center;
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: var(--card-shadow);
+  border: 1px solid var(--border-color);
+}
+
+.value-prop h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.value-prop p {
+  color: var(--text-light);
 }
 
 /* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -584,5 +741,14 @@ footer {
 
   .modal-content {
     padding: 1.5rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .primary-button,
+  .secondary-button {
+    width: 100%;
   }
 }
