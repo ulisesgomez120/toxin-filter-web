@@ -1,0 +1,573 @@
+/* Reset and Variables */
+:root {
+  --primary-color: #157f1e;
+  --secondary-color: #ffc107;
+  --danger-color: #e63757;
+  --warning-color: #f6c343;
+  --success-color: #00d27a;
+  --background-color: #f9fbfd;
+  --text-color: #12263f;
+  --border-color: #e3ebf6;
+  --card-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
+  --transition-speed: 0.3s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic Layout */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Navigation */
+header {
+  background-color: white;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--card-shadow);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-speed);
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--primary-color);
+  transition: width var(--transition-speed);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+#hero {
+  text-align: center;
+  padding: 8rem 2rem;
+  background: linear-gradient(120deg, #1e3d8f 0%, #15296b 100%);
+  margin: 0 auto;
+  max-width: none;
+  color: white;
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.5px;
+}
+
+#hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.95);
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Features Section */
+#features h2 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 1rem;
+}
+
+.feature {
+  text-align: center;
+  padding: 2.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  transition: transform var(--transition-speed);
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+
+.feature h3 {
+  color: var(--primary-color);
+  margin: 1.5rem 0 1rem;
+}
+
+.feature p {
+  color: var(--text-color);
+}
+
+/* Badge System */
+.toxic-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-speed);
+}
+
+.toxic-badge:hover {
+  transform: scale(1.1);
+}
+
+.toxic-badge.high {
+  background-color: var(--danger-color);
+}
+.toxic-badge.moderate {
+  background-color: var(--warning-color);
+}
+.toxic-badge.safe {
+  background-color: var(--success-color);
+}
+.toxic-badge.unknown {
+  background-color: var(--secondary-color);
+}
+
+/* Cards */
+.product-card {
+  position: relative;
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  background: white;
+  box-shadow: var(--card-shadow);
+  transition: transform var(--transition-speed);
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.ingredient-card {
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  background: white;
+  box-shadow: var(--card-shadow);
+  transition: transform var(--transition-speed);
+}
+
+.ingredient-card:hover {
+  transform: translateY(-5px);
+}
+
+.ingredient-card h3 {
+  color: var(--primary-color);
+}
+
+.concern-level {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.concern-level.high {
+  background-color: rgba(230, 55, 87, 0.1);
+  color: var(--danger-color);
+  border: 1px solid rgba(230, 55, 87, 0.2);
+}
+
+.ingredients-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Sample Product */
+.sample-product {
+  text-align: center;
+  padding: 3rem;
+  background: linear-gradient(to bottom, #f8f9fa, #ffffff);
+  border-radius: 12px;
+  font-weight: 500;
+  color: var(--text-color);
+  border: 2px dashed var(--border-color);
+}
+
+.badge-tooltip {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: var(--card-shadow);
+  z-index: 10;
+  min-width: 200px;
+  border: 1px solid var(--border-color);
+}
+
+.product-card:hover .badge-tooltip {
+  display: block;
+}
+
+.badge-tooltip h4 {
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.badge-tooltip ul {
+  list-style: none;
+  padding: 0;
+}
+
+.badge-tooltip li {
+  margin: 0.25rem 0;
+  font-size: 0.875rem;
+}
+
+.badge-tooltip span.high {
+  color: var(--danger-color);
+  font-weight: 500;
+}
+
+.badge-tooltip span.moderate {
+  color: var(--warning-color);
+  font-weight: 500;
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 38, 63, 0.8);
+  backdrop-filter: blur(4px);
+  z-index: 1100;
+  opacity: 0;
+  transition: opacity var(--transition-speed);
+}
+
+.modal.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+}
+
+.modal-content {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  max-width: 1000px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: 0 1rem 3rem rgba(18, 38, 63, 0.15);
+  transform: scale(0.9);
+  transition: transform var(--transition-speed);
+}
+
+.modal.active .modal-content {
+  transform: scale(1);
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.close-modal {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-color);
+  transition: color var(--transition-speed);
+}
+
+.close-modal:hover {
+  color: var(--danger-color);
+}
+
+.modal-body {
+  padding-right: 1rem;
+}
+
+.ingredients-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.ingredient-group {
+  background: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.ingredient-group h3 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.ingredient-group ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ingredient-group li {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.effects-list {
+  margin-top: 0.5rem;
+  margin-left: 1rem;
+}
+
+.effects-list li {
+  font-weight: normal;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+  position: relative;
+}
+
+.effects-list li:before {
+  content: "•";
+  color: var(--secondary-color);
+  position: absolute;
+  left: -1rem;
+}
+
+/* Buttons */
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  background: var(--primary-color);
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all var(--transition-speed);
+  box-shadow: 0 4px 6px rgba(30, 61, 143, 0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(30, 61, 143, 0.3);
+  background: #15296b;
+}
+
+.view-all-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Contact Section */
+.contact-categories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-category {
+  padding: 2.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+  text-align: center;
+  transition: transform var(--transition-speed);
+}
+
+.contact-category:hover {
+  transform: translateY(-5px);
+}
+
+.contact-email {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-speed);
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.contact-email:hover {
+  color: #15296b;
+}
+
+/* Badge Demo Section */
+.badge-demo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.badge-explanation {
+  padding: 2.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.dot.high {
+  background-color: var(--danger-color);
+}
+.dot.moderate {
+  background-color: var(--warning-color);
+}
+.dot.safe {
+  background-color: var(--success-color);
+}
+.dot.unknown {
+  background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+  padding: 3rem 2rem;
+  text-align: center;
+  border-top: 1px solid var(--border-color);
+  background: white;
+  color: var(--text-color);
+  margin-top: 6rem;
+}
+
+/* Section Spacing */
+#toxic-ingredients,
+#badge-demo,
+#about,
+#policies,
+#contact {
+  margin-top: 6rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  #hero {
+    padding: 6rem 1rem;
+  }
+
+  #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  section {
+    padding: 3rem 1rem;
+  }
+
+  .features-grid,
+  .ingredients-grid,
+  .contact-categories,
+  .ingredients-list {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .badge-demo {
+    gap: 2rem;
+  }
+
+  .modal-content {
+    padding: 1.5rem;
+  }
+}

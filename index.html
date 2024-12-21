@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toxin Filter - Smart Grocery Shopping</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">Toxin Filter</div>
+        <div class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero">
+        <h1>Make Healthier Food Choices</h1>
+        <p>Chrome extension that helps identify potentially harmful ingredients while shopping on Instacart</p>
+      </section>
+
+      <section id="features">
+        <h2>Features</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <h3>Visual Feedback System</h3>
+            <p>Color-coded badges show ingredient concerns at a glance</p>
+          </div>
+          <div class="feature">
+            <h3>Smart Ingredient Analysis</h3>
+            <p>Real-time identification of potentially harmful ingredients</p>
+          </div>
+          <div class="feature">
+            <h3>Detailed Information</h3>
+            <p>Interactive tooltips provide ingredient-specific details</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="toxic-ingredients">
+        <h2>Common Toxic Ingredients We Track</h2>
+        <p>Our extension monitors for many potentially harmful ingredients. Here are some key examples:</p>
+        <div class="ingredients-grid">
+          <div class="ingredient-card">
+            <h3>High Fructose Corn Syrup</h3>
+            <span class="concern-level high">High Concern</span>
+            <ul>
+              <li>Increased risk of obesity</li>
+              <li>Potential metabolic syndrome</li>
+              <li>Insulin resistance</li>
+            </ul>
+          </div>
+          <div class="ingredient-card">
+            <h3>Aspartame</h3>
+            <span class="concern-level high">High Concern</span>
+            <ul>
+              <li>Headaches</li>
+              <li>Seizures</li>
+              <li>Depression and anxiety</li>
+            </ul>
+          </div>
+          <div class="ingredient-card">
+            <h3>Sodium Nitrite</h3>
+            <span class="concern-level high">High Concern</span>
+            <ul>
+              <li>Formation of carcinogenic nitrosamines</li>
+              <li>Increased cancer risk</li>
+              <li>Methemoglobinemia risk</li>
+            </ul>
+          </div>
+        </div>
+        <div class="view-all-container">
+          <button class="view-all-btn" onclick="toggleIngredientsList()">View All Toxic Ingredients</button>
+        </div>
+      </section>
+
+      <!-- Modal for full ingredients list -->
+      <div id="ingredients-modal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Complete List of Monitored Ingredients</h2>
+            <span class="close-modal" onclick="toggleIngredientsList()">&times;</span>
+          </div>
+          <div class="modal-body">
+            <div class="ingredients-list">
+              <div class="ingredient-group">
+                <h3>High Concern</h3>
+                <ul>
+                  <li>
+                    Aspartame
+                    <ul class="effects-list">
+                      <li>Headaches</li>
+                      <li>Seizures</li>
+                      <li>Depression and anxiety</li>
+                    </ul>
+                  </li>
+                  <li>
+                    High Fructose Corn Syrup
+                    <ul class="effects-list">
+                      <li>Increased risk of obesity</li>
+                      <li>Insulin resistance</li>
+                      <li>Potential metabolic syndrome</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Sodium Nitrite
+                    <ul class="effects-list">
+                      <li>Formation of carcinogenic nitrosamines</li>
+                      <li>Increased cancer risk</li>
+                      <li>Methemoglobinemia risk</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Potassium Bromate
+                    <ul class="effects-list">
+                      <li>Potential carcinogen</li>
+                      <li>Kidney damage</li>
+                      <li>Nervous system damage</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Partially Hydrogenated Oils
+                    <ul class="effects-list">
+                      <li>Increased LDL cholesterol</li>
+                      <li>Decreased HDL cholesterol</li>
+                      <li>Higher risk of heart disease</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="ingredient-group">
+                <h3>Moderate Concern</h3>
+                <ul>
+                  <li>
+                    Propylene Glycol
+                    <ul class="effects-list">
+                      <li>Skin irritation</li>
+                      <li>Allergic reactions</li>
+                      <li>Central nervous system effects</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Phosphoric Acid
+                    <ul class="effects-list">
+                      <li>Decreased bone density</li>
+                      <li>Dental erosion</li>
+                      <li>Kidney problems</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Sodium Benzoate
+                    <ul class="effects-list">
+                      <li>Can form benzene when combined with vitamin C</li>
+                      <li>Hyperactivity in children</li>
+                      <li>Allergic reactions</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Carrageenan
+                    <ul class="effects-list">
+                      <li>Inflammation</li>
+                      <li>Digestive problems</li>
+                      <li>Potential carcinogenic effects</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Monosodium Glutamate
+                    <ul class="effects-list">
+                      <li>Headaches</li>
+                      <li>Nausea</li>
+                      <li>Chest pain</li>
+                    </ul>
+                  </li>
+                  <li>
+                    BHT (Butylated hydroxytoluene)
+                    <ul class="effects-list">
+                      <li>Potential liver effects</li>
+                      <li>Kidney effects</li>
+                      <li>Behavioral effects</li>
+                    </ul>
+                  </li>
+                  <li>
+                    BHA (Butylated hydroxyanisole)
+                    <ul class="effects-list">
+                      <li>Potential carcinogen</li>
+                      <li>Endocrine disruption</li>
+                      <li>Behavioral effects</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Artificial Food Coloring
+                    <ul class="effects-list">
+                      <li>Hyperactivity in children</li>
+                      <li>Allergic reactions</li>
+                      <li>Behavioral changes</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="badge-demo">
+        <h2>Visual Ingredient Alerts</h2>
+        <p>Our extension adds clear visual indicators to help you make informed decisions while shopping:</p>
+        <div class="badge-demo">
+          <div class="product-card">
+            <div class="badge-container">
+              <div class="toxic-badge high">3</div>
+            </div>
+            <div class="badge-tooltip">
+              <h4>3 Concerning Ingredients Found:</h4>
+              <ul>
+                <li><span class="high">High Fructose Corn Syrup</span></li>
+                <li><span class="high">Sodium Nitrite</span></li>
+                <li><span class="moderate">Carrageenan</span></li>
+              </ul>
+            </div>
+            <div class="sample-product">Sample Product Image</div>
+          </div>
+          <div class="badge-explanation">
+            <h3>Understanding the Badge</h3>
+            <ul>
+              <li><span class="dot high"></span> Red: High concern ingredients</li>
+              <li><span class="dot moderate"></span> Yellow: Moderate concern ingredients</li>
+              <li><span class="dot safe"></span> Green: No concerning ingredients</li>
+              <li><span class="dot unknown"></span> Gray: No ingredient data available</li>
+            </ul>
+            <p>The number indicates how many concerning ingredients were found in the product.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+          <p>
+            Toxin Filter is dedicated to helping you make informed decisions about the food you purchase. Our Chrome
+            extension seamlessly integrates with Instacart to provide real-time ingredient analysis while you shop.
+          </p>
+          <div class="value-props">
+            <div class="value-prop">
+              <h3>Simplified Shopping</h3>
+              <p>Make healthy choices without spending hours reading labels</p>
+            </div>
+            <div class="value-prop">
+              <h3>Non-Intrusive Design</h3>
+              <p>Clear visual indicators that enhance rather than disrupt your shopping experience</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="policies">
+        <h2>Policies</h2>
+        <div class="policy-section">
+          <h3>Subscription & Cancellation</h3>
+          <ul>
+            <li>Subscription remains active until the end of your current billing period</li>
+            <li>Full access to all features until the period ends</li>
+            <li>No auto-renewal after cancellation</li>
+            <li>No refunds for partial periods</li>
+          </ul>
+        </div>
+        <div class="policy-section">
+          <h3>Terms of Service</h3>
+          <p>
+            By using Toxin Filter, you agree to use the service as intended for identifying ingredients in grocery
+            products on Instacart. The extension is provided "as is" without warranty of any kind.
+          </p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-categories">
+          <div class="contact-category">
+            <h3>General Inquiries</h3>
+            <p>For general questions about our service:</p>
+            <a href="mailto:kryptoknightdev@gmail.com?subject=General%20Question:%20" class="contact-email"
+              >kryptoknightdev@gmail.com</a
+            >
+          </div>
+          <div class="contact-category">
+            <h3>Account & Billing Support</h3>
+            <p>For questions about your subscription or billing:</p>
+            <a href="mailto:kryptoknightdev@gmail.com?subject=Account%20and%20Billing" class="contact-email"
+              >kryptoknightdev@gmail.com</a
+            >
+          </div>
+          <div class="contact-category">
+            <h3>Ingredient Information</h3>
+            <p>For questions about ingredients we check:</p>
+            <a href="mailto:kryptoknightdev@gmail.com?subject=Ingredient%20Inf" class="contact-email"
+              >kryptoknightdev@gmail.com</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Toxin Filter. All rights reserved.</p>
+    </footer>
+
+    <script>
+      function toggleIngredientsList() {
+        const modal = document.getElementById("ingredients-modal");
+        modal.classList.toggle("active");
+
+        // Prevent scrolling when modal is open
+        document.body.style.overflow = modal.classList.contains("active") ? "hidden" : "";
+
+        // Close modal when clicking outside
+        if (modal.classList.contains("active")) {
+          modal.addEventListener("click", function (e) {
+            if (e.target === modal) {
+              toggleIngredientsList();
+            }
+          });
+        }
+      }
+    </script>
+  </body>
+</html>
