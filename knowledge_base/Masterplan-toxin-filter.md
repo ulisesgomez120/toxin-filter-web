@@ -1,4 +1,4 @@
-# Grocery Ingredient Filter Chrome Extension - Current Implementation
+# Toxin Filter Chrome Extension - Current Implementation
 
 ## App Overview and Objectives
 
@@ -147,6 +147,95 @@ A Chrome extension that helps users make healthier food choices on Instacart by 
    - Product information
    - Ingredient results
    - Product groups
+
+## Disclaimers and Terms of Service
+
+### Disclaimers
+
+1. Information Purpose
+
+   - The Toxin Filter extension provides information for educational purposes only
+   - The extension is not intended to diagnose, treat, cure, or prevent any disease
+   - Users should consult qualified healthcare professionals for medical advice
+
+2. Research Limitations
+
+   - Ingredient classifications are based on available research which may evolve
+   - Scientific understanding of certain ingredients remains subject to ongoing research
+   - Some ingredients may have mixed or conflicting research findings
+   - The extension reflects current research consensus where possible
+
+3. Data Accuracy
+   - While we strive for accuracy, ingredient data may not be complete or current
+   - Product formulations can change without notice
+   - Users should verify ingredients directly on product packaging
+   - The extension is a supplementary tool and should not be the sole basis for purchasing decisions
+
+### Terms of Service
+
+1. Service Limitations
+
+   - The extension provides ingredient analysis based on available data
+   - We do not guarantee the completeness or accuracy of ingredient classifications
+   - The badge system and warnings are guidelines, not definitive safety assessments
+   - We reserve the right to modify or discontinue any features without notice
+
+2. User Responsibility
+
+   - Users acknowledge that ingredient research is ongoing and subject to change
+   - Users are responsible for their own purchasing decisions
+   - Users should conduct their own research and due diligence
+   - The extension should be used as one of many tools in making informed decisions
+
+3. Medical Disclaimer
+
+   - The extension is not a substitute for professional medical advice
+   - Users with specific health concerns should consult healthcare providers
+   - Individual reactions to ingredients may vary
+   - The extension does not account for personal allergies or sensitivities
+
+4. Intellectual Property
+
+   - All content, features, and functionality are owned by Toxin Filter
+   - Users may not copy, modify, or distribute extension materials
+   - The extension's design, logos, and content are protected by copyright
+   - Users receive a limited license to use the extension as intended
+
+5. Acceptable Use
+
+   - Users agree not to misuse or attempt to circumvent the service
+   - No unauthorized access to backend systems or data
+   - No interference with other users' access to the service
+   - No automated or programmatic access without permission
+   - No use of the service for unlawful purposes
+
+6. Limitation of Liability
+
+   - We are not liable for any damages arising from use of the service
+   - No liability for decisions made based on extension data
+   - No responsibility for product changes not reflected in our data
+   - Maximum liability limited to subscription fees paid, if any
+
+7. Service Modifications
+
+   - We may modify or discontinue the service at any time
+   - Features may change without prior notice
+   - Subscription terms may be updated with notice
+   - Users will be notified of significant changes
+
+8. Privacy and Data
+
+   - Users agree to our Privacy Policy
+   - We collect and process data as described in Privacy Policy
+   - Users grant permission to analyze shopping data
+   - We implement reasonable security measures
+
+9. Account Termination
+
+   - We may suspend or terminate accounts for violations
+   - Users may cancel subscription per cancellation policy
+   - No refunds for partial subscription periods
+   - Data retention follows our Privacy Policy
 
 ## Future Enhancements
 
