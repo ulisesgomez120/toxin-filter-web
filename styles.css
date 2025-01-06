@@ -392,8 +392,11 @@ nav {
 
 .ingredients-list {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 1rem;
 }
 
 .ingredient-group {
@@ -401,6 +404,7 @@ nav {
   padding: 1.5rem;
   border-radius: 0.75rem;
   border: 1px solid var(--border-color);
+  height: fit-content;
 }
 
 .ingredient-group h3 {
@@ -415,8 +419,16 @@ nav {
 }
 
 .ingredient-group li {
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
   font-weight: 500;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ingredient-group li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
 }
 
 .effects-list {
@@ -427,8 +439,37 @@ nav {
 .effects-list li {
   font-weight: normal;
   color: var(--text-light);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   position: relative;
+}
+
+.sources-list {
+  margin-top: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.sources-list li {
+  margin-bottom: 0.75rem;
+  font-weight: normal;
+  color: var(--text-light);
+}
+
+.sources-list a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+.sources-list a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.ingredient-aliases {
+  font-size: 0.875rem;
+  color: var(--text-light);
+  margin-bottom: 0.75rem;
+  font-style: italic;
 }
 
 .effects-list li:before {
