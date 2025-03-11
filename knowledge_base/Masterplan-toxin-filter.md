@@ -1,9 +1,9 @@
-# Toxin Filter Chrome Extension - Current Implementation
+# Clean Cart Chrome Extension - Current Implementation
 
 ## App Overview and Objectives
 
-App Name : Toxin Filter
-Web Domain : toxinfilter.com
+App Name : Clean Cart
+Web Domain : getcleancart.com
 
 A Chrome extension that helps users make healthier food choices on Instacart by identifying products with potentially harmful ingredients. The extension provides visual feedback through a badge-based system and informative tooltips, making it easy for users to identify and understand concerning ingredients without disrupting their shopping experience.
 
@@ -154,7 +154,7 @@ A Chrome extension that helps users make healthier food choices on Instacart by 
 
 1. Information Purpose
 
-   - The Toxin Filter extension provides information for educational purposes only
+   - The Clean Cart extension provides information for educational purposes only
    - The extension is not intended to diagnose, treat, cure, or prevent any disease
    - Users should consult qualified healthcare professionals for medical advice
 
@@ -196,7 +196,7 @@ A Chrome extension that helps users make healthier food choices on Instacart by 
 
 4. Intellectual Property
 
-   - All content, features, and functionality are owned by Toxin Filter
+   - All content, features, and functionality are owned by Clean Cart
    - Users may not copy, modify, or distribute extension materials
    - The extension's design, logos, and content are protected by copyright
    - Users receive a limited license to use the extension as intended
