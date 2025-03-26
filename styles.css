@@ -191,7 +191,7 @@ nav .logo img {
 }
 
 /* Badge System */
-.toxic-badge {
+.concern-badge {
   position: absolute;
   top: 12px;
   left: 12px;
@@ -208,20 +208,20 @@ nav .logo img {
   transition: transform var(--transition-speed);
 }
 
-.toxic-badge:hover {
+.concern-badge:hover {
   transform: scale(1.1);
 }
 
-.toxic-badge.high {
+.concern-badge.high {
   background-color: var(--danger-color);
 }
-.toxic-badge.moderate {
+.concern-badge.moderate {
   background-color: var(--warning-color);
 }
-.toxic-badge.safe {
+.concern-badge.safe {
   background-color: var(--success-color);
 }
-.toxic-badge.unknown {
+.concern-badge.unknown {
   background-color: var(--text-light);
 }
 
@@ -603,6 +603,34 @@ footer {
   margin-top: 6rem;
 }
 
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+.footer-links a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-speed);
+}
+
+.footer-links a:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.seo-footer {
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: var(--text-light);
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Get Extension Section */
 #get-extension {
   text-align: center;
@@ -719,7 +747,7 @@ footer {
 }
 
 /* Section Spacing */
-#toxic-ingredients {
+#harmful-ingredients {
   margin-top: 0;
   padding-top: 6rem;
   background: white;

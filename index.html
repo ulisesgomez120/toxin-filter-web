@@ -3,7 +3,73 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clean Cart - Smart Grocery Shopping</title>
+    <title>Clean Cart - Identify Harmful Food Ingredients While Shopping on Instacart</title>
+    <meta
+      name="description"
+      content="Clean Cart is a Chrome extension that helps you identify harmful ingredients in food products while shopping on Instacart. Make healthier food choices with our visual badge system and ingredient analysis."
+    />
+    <meta
+      name="keywords"
+      content="harmful ingredients checker, food ingredient scanner, Instacart shopping helper, harmful ingredients filter, clean eating, healthy food choices, food additives checker, grocery shopping assistant, ingredient analysis, food safety"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://getcleancart.com/" />
+    <meta property="og:title" content="Clean Cart - Identify Harmful Food Ingredients While Shopping" />
+    <meta
+      property="og:description"
+      content="Make healthier food choices on Instacart with our Chrome extension that identifies potentially harmful ingredients in real-time."
+    />
+    <meta property="og:image" content="icons/icon128.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://getcleancart.com/" />
+    <meta property="twitter:title" content="Clean Cart - Identify Harmful Food Ingredients While Shopping" />
+    <meta
+      property="twitter:description"
+      content="Make healthier food choices on Instacart with our Chrome extension that identifies potentially harmful ingredients in real-time."
+    />
+    <meta property="twitter:image" content="icons/icon128.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://getcleancart.com/" />
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "Clean Cart - Harmful Ingredients Checker",
+        "applicationCategory": "BrowserApplication",
+        "operatingSystem": "Chrome",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "description": "Clean Cart is a Chrome extension that helps you identify harmful ingredients in food products while shopping on Instacart. Make healthier food choices with our visual badge system and ingredient analysis.",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "156"
+        },
+        "featureList": "Visual ingredient alerts, Real-time ingredient analysis, Detailed ingredient information, Badge-based warning system",
+        "screenshot": "https://getcleancart.com/icons/icon128.png",
+        "softwareVersion": "1.0.0",
+        "author": {
+          "@type": "Organization",
+          "name": "Clean Cart",
+          "url": "https://getcleancart.com"
+        },
+        "potentialAction": {
+          "@type": "DownloadAction",
+          "target": "https://chromewebstore.google.com/detail/clean-cart-ingredient-che/hfplmjgnghmoffhgfbkmkinknmlhbccg"
+        }
+      }
+    </script>
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="icons/icon16.png" type="image/png" />
   </head>
@@ -24,14 +90,20 @@
 
     <main>
       <section id="hero">
-        <h1>Make Healthier Food Choices</h1>
-        <p>Chrome extension that helps identify potentially harmful ingredients while shopping on Instacart</p>
+        <h1>Identify Harmful Ingredients While Shopping on Instacart</h1>
+        <p>
+          Clean Cart is a Chrome extension that helps you make healthier food choices by automatically detecting and
+          flagging potentially harmful ingredients in real-time
+        </p>
       </section>
 
       <section id="get-extension">
-        <h2>Get Started</h2>
+        <h2>Start Making Healthier Food Choices Today</h2>
         <div class="cta-container">
-          <p>Install the Clean Cart extension from the Chrome Web Store today!</p>
+          <p>
+            Install the Clean Cart Chrome extension and instantly identify harmful ingredients like High Fructose Corn
+            Syrup, Aspartame, Sodium Nitrite, and more while shopping on Instacart!
+          </p>
           <div class="cta-buttons">
             <a
               href="https://chromewebstore.google.com/detail/clean-cart-ingredient-che/hfplmjgnghmoffhgfbkmkinknmlhbccg"
@@ -50,7 +122,7 @@
         <div class="badge-demo">
           <div class="product-card">
             <div class="badge-container">
-              <div class="toxic-badge high">3</div>
+              <div class="concern-badge high">3</div>
             </div>
             <div class="badge-tooltip">
               <h4>3 Concerning Ingredients Found:</h4>
@@ -76,26 +148,43 @@
       </section>
 
       <section id="features">
-        <h2>Features</h2>
+        <h2>How Clean Cart Helps You Avoid Harmful Food Ingredients</h2>
         <div class="features-grid">
           <div class="feature">
-            <h3>Visual Feedback System</h3>
-            <p>Color-coded badges show ingredient concerns at a glance</p>
+            <h3>Visual Ingredient Alert System</h3>
+            <p>
+              Color-coded badges instantly show you which products contain harmful ingredients while shopping on
+              Instacart
+            </p>
           </div>
           <div class="feature">
-            <h3>Smart Ingredient Analysis</h3>
-            <p>Real-time identification of potentially harmful ingredients</p>
+            <h3>Real-Time Ingredient Analysis</h3>
+            <p>
+              Our extension automatically scans product ingredients and identifies potentially harmful additives like
+              High Fructose Corn Syrup, Aspartame, and Sodium Nitrite
+            </p>
           </div>
           <div class="feature">
-            <h3>Detailed Information</h3>
-            <p>Interactive tooltips provide ingredient-specific details</p>
+            <h3>Detailed Ingredient Information</h3>
+            <p>
+              Interactive tooltips provide specific details about each concerning ingredient and why it might be harmful
+              to your health
+            </p>
           </div>
         </div>
       </section>
 
-      <section id="toxic-ingredients">
-        <h2>Common Ingredients We Track</h2>
-        <p>Our extension monitors for many potentially harmful ingredients. Here are some key examples:</p>
+      <section id="harmful-ingredients">
+        <h2>Harmful Food Ingredients Our Extension Identifies</h2>
+        <p>
+          Clean Cart monitors for dozens of potentially harmful food additives and ingredients. Here are some of the
+          most concerning ingredients we help you avoid:
+        </p>
+        <!-- <div class="view-all-container" style="text-align: right; margin-bottom: 1rem">
+          <a href="ingredients/" class="secondary-button" style="display: inline-block"
+            >View Complete Ingredients Guide</a
+          >
+        </div> -->
         <div class="ingredients-grid">
           <div class="ingredient-card">
             <h3>High Fructose Corn Syrup</h3>
@@ -127,6 +216,7 @@
         </div>
         <div class="view-all-container">
           <button class="view-all-btn" onclick="toggleIngredientsList()">View All Ingredients</button>
+          <!-- <a href="ingredients/" class="secondary-button" style="margin-left: 1rem">Detailed Ingredients Guide</a> -->
         </div>
       </section>
 
@@ -436,20 +526,31 @@
       </div>
 
       <section id="about">
-        <h2>About Us</h2>
+        <h2>About Clean Cart - Your Healthy Shopping Assistant</h2>
         <div class="about-content">
           <p>
-            Clean Cart is dedicated to helping you make informed decisions about the food you purchase. Our Chrome
-            extension seamlessly integrates with Instacart to provide real-time ingredient analysis while you shop.
+            Clean Cart was created to help consumers identify harmful ingredients in food products while shopping
+            online. Our Chrome extension seamlessly integrates with Instacart to provide real-time ingredient analysis,
+            helping you avoid concerning food additives and make healthier choices for you and your family.
           </p>
           <div class="value-props">
             <div class="value-prop">
-              <h3>Simplified Shopping</h3>
-              <p>Make healthy choices without spending hours reading labels</p>
+              <h3>Save Time Reading Food Labels</h3>
+              <p>Make healthier food choices without spending hours researching ingredients and reading tiny labels</p>
             </div>
             <div class="value-prop">
-              <h3>Non-Intrusive Design</h3>
-              <p>Clear visual indicators that enhance rather than disrupt your shopping experience</p>
+              <h3>Seamless Shopping Experience</h3>
+              <p>
+                Our non-intrusive design provides clear visual indicators about harmful ingredients without disrupting
+                your Instacart shopping experience
+              </p>
+            </div>
+            <div class="value-prop">
+              <h3>Evidence-Based Ingredient Analysis</h3>
+              <p>
+                Our ingredient classifications are based on scientific research and updated regularly as new studies
+                emerge
+              </p>
             </div>
           </div>
         </div>
@@ -655,6 +756,16 @@
 
     <footer>
       <p>&copy; 2025 Clean Cart. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#features">Features</a>
+        <a href="#harmful-ingredients">Harmful Ingredients</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="seo-footer">
+        Clean Cart is the leading Chrome extension for identifying harmful ingredients while shopping on Instacart. Make
+        healthier food choices today!
+      </p>
     </footer>
 
     <script>

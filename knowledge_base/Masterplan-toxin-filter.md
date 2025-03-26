@@ -256,3 +256,57 @@ A Chrome extension that helps users make healthier food choices on Instacart by 
    - Enhanced batch processing
    - Improved caching strategies
    - Better variant handling
+
+## Chrome Extension's Description on the store
+
+Shop smarter on Instacart! Clean Cart highlights ingredients of concern, saving you time and helping you make healthier choices.
+
+Make healthier food choices on Instacart with Clean Cart! This extension simplifies your grocery shopping by automatically scanning product ingredient lists and highlighting ingredients that you might want to avoid.
+
+How Clean Cart Works:
+
+Instant Ingredient Scanning: Clean Cart analyzes ingredient lists in real-time as you browse Instacart. No more manually reading every label!
+
+Clear Visual Indicators: A simple, color-coded badge appears on product images:
+
+🟢 Green: No ingredients of concern detected.
+
+🟡 Yellow: Some ingredients you might want to review.
+
+🔴 Red: Contains ingredients you may want to avoid, based on your preferences (see our website for details).
+
+⚪ Gray: Ingredient data not available.
+
+Informative Tooltips: Hover over the badge to see a list of the flagged ingredients and their category (e.g., preservative, artificial sweetener).
+
+Saves You Time: Quickly identify products that meet your dietary needs and preferences, without spending hours reading labels.
+
+7-Day Free Trial!
+
+What We Check For:
+
+Clean Cart helps you identify a wide range of ingredients, including:
+
+Artificial Sweeteners (e.g., Aspartame, Sucralose)
+
+Preservatives (e.g., BHA, BHT, Sodium Nitrite)
+
+Artificial Colors (e.g., Red 40, Yellow 5)
+
+And many more! (See our website, getcleancart.com, for the complete list and supporting research.)
+
+Why Choose Clean Cart?
+
+Empower Your Shopping: Make informed decisions about the food you buy.
+
+Save Time & Effort: Streamline your grocery shopping experience.
+
+Support Your Health Goals: Easily find products that align with your dietary needs.
+
+Constantly Improving: We're committed to providing the most accurate and up-to-date ingredient information.
+
+Install Clean Cart today and start shopping smarter!
+
+DISCLAIMER:
+
+Clean Cart is designed to provide helpful information and assist with your grocery shopping. While we strive for accuracy, ingredient lists on Instacart can sometimes be truncated or formatted differently. Always verify the complete ingredient list on the actual product packaging. Clean Cart is not a substitute for professional medical or dietary advice. Consult with healthcare professionals about specific dietary concerns. If our extension shows no concerning ingredients for products known to contain them (like some chips or sodas), please double-check the full ingredient list as formatting variations can affect detection.

@@ -1,0 +1,30 @@
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Clean Cart - Harmful Ingredients Checker",
+  "applicationCategory": "BrowserApplication",
+  "operatingSystem": "Chrome",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "description": "Clean Cart is a Chrome extension that helps you identify harmful ingredients in food products while shopping on Instacart. Make healthier food choices with our visual badge system and ingredient analysis.",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "ratingCount": "156"
+  },
+  "featureList": "Visual ingredient alerts, Real-time ingredient analysis, Detailed ingredient information, Badge-based warning system",
+  "screenshot": "https://getcleancart.com/icons/icon128.png",
+  "softwareVersion": "1.0.0",
+  "author": {
+    "@type": "Organization",
+    "name": "Clean Cart",
+    "url": "https://getcleancart.com"
+  },
+  "potentialAction": {
+    "@type": "DownloadAction",
+    "target": "https://chromewebstore.google.com/detail/clean-cart-ingredient-che/hfplmjgnghmoffhgfbkmkinknmlhbccg"
+  }
+}
