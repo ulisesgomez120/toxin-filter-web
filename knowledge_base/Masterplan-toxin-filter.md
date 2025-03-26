@@ -4,6 +4,12 @@
 
 App Name : Clean Cart
 Web Domain : getcleancart.com
+Chrome Store URL : https://chromewebstore.google.com/detail/clean-cart-ingredient-che/hfplmjgnghmoffhgfbkmkinknmlhbccg
+Extension Icons :
+
+- icons/icon16.png (16x16)
+- icons/icon48.png (48x48)
+- icons/icon128.png (128x128)
 
 A Chrome extension that helps users make healthier food choices on Instacart by identifying products with potentially harmful ingredients. The extension provides visual feedback through a badge-based system and informative tooltips, making it easy for users to identify and understand concerning ingredients without disrupting their shopping experience.
 

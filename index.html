@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clean Cart - Smart Grocery Shopping</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="icons/icon16.png" type="image/png" />
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo">Clean Cart</div>
+        <div class="logo">
+          <img src="icons/icon48.png" alt="Clean Cart Logo" />
+          <span class="logo-text">Clean Cart</span>
+        </div>
         <div class="nav-links">
           <a href="#features">Features</a>
           <a href="#about">About</a>
@@ -22,6 +26,53 @@
       <section id="hero">
         <h1>Make Healthier Food Choices</h1>
         <p>Chrome extension that helps identify potentially harmful ingredients while shopping on Instacart</p>
+      </section>
+
+      <section id="get-extension">
+        <h2>Get Started</h2>
+        <div class="cta-container">
+          <p>Install the Clean Cart extension from the Chrome Web Store today!</p>
+          <div class="cta-buttons">
+            <a
+              href="https://chromewebstore.google.com/detail/clean-cart-ingredient-che/hfplmjgnghmoffhgfbkmkinknmlhbccg"
+              target="_blank"
+              class="primary-button"
+              >Get Extension</a
+            >
+            <!-- Removed the 'Get Notified' button as it's no longer needed -->
+          </div>
+        </div>
+      </section>
+
+      <section id="badge-demo">
+        <h2>Visual Ingredient Alerts</h2>
+        <p>Our extension adds clear visual indicators to help you make informed decisions while shopping:</p>
+        <div class="badge-demo">
+          <div class="product-card">
+            <div class="badge-container">
+              <div class="toxic-badge high">3</div>
+            </div>
+            <div class="badge-tooltip">
+              <h4>3 Concerning Ingredients Found:</h4>
+              <ul>
+                <li><span class="high">High Fructose Corn Syrup</span></li>
+                <li><span class="high">Sodium Nitrite</span></li>
+                <li><span class="moderate">Carrageenan</span></li>
+              </ul>
+            </div>
+            <div class="sample-product">Sample Product Image</div>
+          </div>
+          <div class="badge-explanation">
+            <h3>Understanding the Badge</h3>
+            <ul>
+              <li><span class="dot high"></span> Red: High concern ingredients</li>
+              <li><span class="dot moderate"></span> Yellow: Moderate concern ingredients</li>
+              <li><span class="dot safe"></span> Green: No concerning ingredients</li>
+              <li><span class="dot unknown"></span> Gray: No ingredient data available</li>
+            </ul>
+            <p>The number indicates how many concerning ingredients were found in the product.</p>
+          </div>
+        </div>
       </section>
 
       <section id="features">
@@ -38,17 +89,6 @@
           <div class="feature">
             <h3>Detailed Information</h3>
             <p>Interactive tooltips provide ingredient-specific details</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="get-extension">
-        <h2>Get Started</h2>
-        <div class="cta-container">
-          <p>Coming soon to the Chrome Web Store! Sign up to be notified when we launch.</p>
-          <div class="cta-buttons">
-            <button class="primary-button" onclick="alert('Coming soon!')">Get Extension</button>
-            <button class="secondary-button" onclick="window.location.href='#contact'">Get Notified</button>
           </div>
         </div>
       </section>
@@ -395,37 +435,6 @@
         </div>
       </div>
 
-      <section id="badge-demo">
-        <h2>Visual Ingredient Alerts</h2>
-        <p>Our extension adds clear visual indicators to help you make informed decisions while shopping:</p>
-        <div class="badge-demo">
-          <div class="product-card">
-            <div class="badge-container">
-              <div class="toxic-badge high">3</div>
-            </div>
-            <div class="badge-tooltip">
-              <h4>3 Concerning Ingredients Found:</h4>
-              <ul>
-                <li><span class="high">High Fructose Corn Syrup</span></li>
-                <li><span class="high">Sodium Nitrite</span></li>
-                <li><span class="moderate">Carrageenan</span></li>
-              </ul>
-            </div>
-            <div class="sample-product">Sample Product Image</div>
-          </div>
-          <div class="badge-explanation">
-            <h3>Understanding the Badge</h3>
-            <ul>
-              <li><span class="dot high"></span> Red: High concern ingredients</li>
-              <li><span class="dot moderate"></span> Yellow: Moderate concern ingredients</li>
-              <li><span class="dot safe"></span> Green: No concerning ingredients</li>
-              <li><span class="dot unknown"></span> Gray: No ingredient data available</li>
-            </ul>
-            <p>The number indicates how many concerning ingredients were found in the product.</p>
-          </div>
-        </div>
-      </section>
-
       <section id="about">
         <h2>About Us</h2>
         <div class="about-content">
@@ -645,7 +654,7 @@
     </main>
 
     <footer>
-      <p>&copy; 2024 Clean Cart. All rights reserved.</p>
+      <p>&copy; 2025 Clean Cart. All rights reserved.</p>
     </footer>
 
     <script>

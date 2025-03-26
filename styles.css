@@ -82,6 +82,22 @@ nav {
   font-weight: 700;
   color: var(--primary-color);
   letter-spacing: -0.025em;
+  /* Ensure the container aligns the image properly */
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+nav .logo img {
+  height: 52px; /* Increased size from 40px to 52px */
+  display: block; /* Remove extra space below image */
+  margin-right: 10px; /* Add space between logo and text */
+}
+
+.logo-text {
+  font-weight: 700;
+  color: var(--primary-color);
+  letter-spacing: -0.025em;
 }
 
 .nav-links a {
