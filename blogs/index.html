@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clean Cart Blog - Healthy Shopping Tips & Ingredient Insights</title>
+    <meta
+      name="description"
+      content="Explore articles on identifying harmful food ingredients, decoding labels on Instacart, and tips for healthier grocery shopping with the Clean Cart extension."
+    />
+    <meta
+      name="keywords"
+      content="clean eating blog, healthy shopping tips, Instacart tips, food additives, ingredient checker, harmful ingredients, food labels, Clean Cart blog"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://getcleancart.com/blogs/" />
+    <meta property="og:title" content="Clean Cart Blog - Healthy Shopping Tips & Ingredient Insights" />
+    <meta
+      property="og:description"
+      content="Explore articles on identifying harmful food ingredients, decoding labels on Instacart, and tips for healthier grocery shopping."
+    />
+    <meta property="og:image" content="https://getcleancart.com/icons/icon128.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://getcleancart.com/blogs/" />
+    <meta property="twitter:title" content="Clean Cart Blog - Healthy Shopping Tips & Ingredient Insights" />
+    <meta
+      property="twitter:description"
+      content="Explore articles on identifying harmful food ingredients, decoding labels on Instacart, and tips for healthier grocery shopping."
+    />
+    <meta property="twitter:image" content="https://getcleancart.com/icons/icon128.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://getcleancart.com/blogs/" />
+
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="icon" href="../icons/icon16.png" type="image/png" />
+    <style>
+      /* Add specific styles for blog index if needed */
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 3rem;
+      }
+      .blog-card {
+        padding: 2rem;
+        background: white;
+        border-radius: 1rem;
+        box-shadow: var(--card-shadow);
+        transition: all var(--transition-speed);
+        border: 1px solid var(--border-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .blog-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+      }
+      .blog-card h3 {
+        color: var(--primary-color);
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+      }
+      .blog-card p {
+        color: var(--text-light);
+        flex-grow: 1;
+        margin-bottom: 1.5rem;
+      }
+      .blog-card a.read-more {
+        display: inline-block;
+        padding: 0.6rem 1.2rem;
+        border: 1px solid var(--primary-color);
+        border-radius: 0.5rem;
+        color: var(--primary-color);
+        text-decoration: none;
+        font-weight: 500;
+        transition: all var(--transition-speed);
+        align-self: flex-start; /* Align button to the start */
+      }
+      .blog-card a.read-more:hover {
+        background-color: var(--primary-color);
+        color: white;
+      }
+      #blog-hero {
+        text-align: center;
+        padding: 4rem 2rem;
+        background: var(--background-color);
+        border-bottom: 1px solid var(--border-color);
+      }
+      #blog-hero h1 {
+        font-size: 2.5rem;
+        color: var(--primary-color);
+      }
+      #blog-hero p {
+        color: var(--text-light);
+        max-width: 700px;
+        margin: 1rem auto 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="../index.html" style="display: flex; align-items: center; text-decoration: none">
+            <img src="../icons/icon48.png" alt="Clean Cart Logo" />
+            <span class="logo-text">Clean Cart</span>
+          </a>
+        </div>
+        <div class="nav-links">
+          <a href="../index.html#features">Features</a>
+          <a href="../index.html#about">About</a>
+          <a href="index.html">Blog</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="blog-hero">
+        <h1>Clean Cart Blog</h1>
+        <p>
+          Insights and tips on navigating grocery shopping, understanding food ingredients, and making healthier choices
+          with the help of Clean Cart.
+        </p>
+      </section>
+
+      <section id="blog-posts">
+        <h2>Latest Articles</h2>
+        <div class="blog-grid">
+          <div class="blog-card">
+            <h3>5 Common Food Additives Hiding in Your Instacart Groceries</h3>
+            <p>
+              Learn about common additives like HFCS, Aspartame, and Sodium Nitrite, and how Clean Cart helps you spot
+              them.
+            </p>
+            <a href="common-food-additives.html" class="read-more">Read Article</a>
+          </div>
+          <div class="blog-card">
+            <h3>Decoding Instacart Ingredient Lists: How Clean Cart Simplifies Healthy Choices</h3>
+            <p>
+              Understand the challenges of online ingredient transparency and how Clean Cart makes it easier to identify
+              what's in your food.
+            </p>
+            <a href="decoding-ingredients.html" class="read-more">Read Article</a>
+          </div>
+          <div class="blog-card">
+            <h3>Tips for Smarter, Healthier Grocery Shopping on Instacart</h3>
+            <p>
+              Practical advice for planning meals, focusing on whole foods, and using Clean Cart to shop healthier
+              online.
+            </p>
+            <a href="shopping-tips.html" class="read-more">Read Article</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Clean Cart. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="../index.html#features">Features</a>
+        <a href="../index.html#harmful-ingredients">Harmful Ingredients</a>
+        <a href="index.html">Blog</a>
+        <a href="../index.html#about">About Us</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+      <p class="seo-footer">
+        Clean Cart helps you identify harmful ingredients on Instacart. Read our blog for tips on healthy shopping and
+        understanding food additives.
+      </p>
+    </footer>
+
+    <script>
+      // Add any specific JS for the blog index if needed
+    </script>
+  </body>
+</html>
