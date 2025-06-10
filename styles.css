@@ -889,6 +889,41 @@ footer {
   transform: rotate(45deg);
 }
 
+/* Styles for confirmation.html */
+#confirmation {
+  padding: 6rem 2rem; /* Consistent with other sections */
+  background-color: var(--background-color);
+}
+
+.confirmation-container {
+  max-width: 100%; /* Consistent with cta-container */
+  margin: 0 auto;
+  background-color: white;
+  padding: 3rem; /* More padding */
+  border-radius: 1rem; /* Consistent with cards */
+  box-shadow: var(--card-shadow);
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.confirmation-container h1 {
+  font-size: 2.25rem; /* Consistent with h2 */
+  color: var(--success-color); /* Use success color from variables */
+  margin-bottom: 1.5rem;
+}
+
+.confirmation-container .checkmark-icon {
+  color: var(--success-color);
+  font-size: 2.25rem; /* Match h1 font size */
+  vertical-align: middle;
+}
+
+.confirmation-container p {
+  font-size: 1.125rem; /* Slightly larger for readability */
+  color: var(--text-light);
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
 /* Responsive */
 /* Responsive Design */
 @media (max-width: 768px) {
